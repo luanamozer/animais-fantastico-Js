@@ -10,12 +10,14 @@
   <script>document.documentElement.className += ' js';</script>
 </head>
 <body>
+  <div class="grid-container">
   <nav class="menu " data-menu="soft" >
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
       <li><a href="#contato">Contatos</a></li>    
-      <li><a href="https://github.com/luanamozer" target="_blank">Dev → </a></li>
+      <li><a href="https://github.com/luanamozer" target="_blank">Dev</a></li>
+      <li><a data-modal="openModal" href="login.html">Login → </a></li>
     </ul>
   </nav>
   <section class="grid-section animais " data-anime="scroll" id="animais">
@@ -117,9 +119,21 @@
 <footer class="copy">
   <p>Todos direitos reservados.</p>
 </footer>
+</div>
 
+<section class="modal-container " data-modal="container">
+  <div class="modal">
+    <button data-modal="close" class="close">X</button>
+    <form action="">
+      <label for="email">Email</label>
+      <input type="text" for="email" id="email">
+
+      <label for="senha">Senha</label>
+      <input type="password" for="senha" id="senha">
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</section>
   <script type="module" src="scripts/index.js"></script>
-  
-
 </body>
 </html>
